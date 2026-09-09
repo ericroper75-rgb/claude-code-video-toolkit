@@ -904,6 +904,17 @@
       ],
       "bestFor": "Playful reveals, structured transitions",
       "status": "stable"
+    },
+    "iris": {
+      "path": "lib/transitions/presentations/iris.tsx",
+      "description": "Cinematic circle/diamond wipe that opens or closes around an origin point",
+      "options": [
+        "shape",
+        "origin",
+        "edgeGlow"
+      ],
+      "bestFor": "Cinematic reveals, spotlight moments, vintage film aesthetic",
+      "status": "stable"
     }
   },
   "components": {

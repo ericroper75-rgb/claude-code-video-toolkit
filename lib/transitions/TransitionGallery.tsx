@@ -24,6 +24,7 @@ import { zoomBlur } from './presentations/zoom-blur';
 import { lightLeak } from './presentations/light-leak';
 import { clockWipe } from './presentations/clock-wipe';
 import { pixelate } from './presentations/pixelate';
+import { iris } from './presentations/iris';
 
 // Scene colors for visual variety
 const SCENE_A_COLOR = '#1a1a2e';
@@ -181,6 +182,7 @@ const TRANSITIONS = [
   { name: 'lightLeak()', presentation: lightLeak({ temperature: 'warm' }), duration: 35 },
   { name: 'clockWipe()', presentation: clockWipe({ direction: 'clockwise' }), duration: 25 },
   { name: 'pixelate()', presentation: pixelate({ maxBlockSize: 50 }), duration: 25 },
+  { name: 'iris()', presentation: iris({ shape: 'circle' }), duration: 30 },
   { name: 'slide()', presentation: slide(), duration: 20 },
   { name: 'fade()', presentation: fade(), duration: 25 },
   { name: 'wipe()', presentation: wipe(), duration: 20 },
@@ -267,6 +269,7 @@ export const transitionMap = {
   lightLeak: { presentation: lightLeak({ temperature: 'warm' }), duration: 35 },
   clockWipe: { presentation: clockWipe({ direction: 'clockwise' }), duration: 25 },
   pixelate: { presentation: pixelate({ maxBlockSize: 50 }), duration: 25 },
+  iris: { presentation: iris({ shape: 'circle' }), duration: 30 },
   slide: { presentation: slide(), duration: 20 },
   fade: { presentation: fade(), duration: 25 },
   wipe: { presentation: wipe(), duration: 20 },

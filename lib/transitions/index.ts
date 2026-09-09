@@ -46,6 +46,9 @@ export type { PixelateProps } from './presentations/pixelate';
 export { checkerboard } from './presentations/checkerboard';
 export type { CheckerboardProps, CheckerboardPattern } from './presentations/checkerboard';
 
+export { iris } from './presentations/iris';
+export type { IrisProps, IrisOrigin } from './presentations/iris';
+
 // Official transitions (slide, fade, wipe, flip) and timing functions
 // (linearTiming, springTiming, TransitionSeries) should be imported directly
 // from '@remotion/transitions' in your project — not re-exported from here.

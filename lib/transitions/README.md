@@ -60,6 +60,7 @@ export const MyVideo = () => {
 | `clockWipe()` | Radial wipe like clock hands | Time-related content, playful reveals | ✅ Validated |
 | `pixelate()` | Digital mosaic dissolution | Retro/gaming, digital transformations | ✅ Validated |
 | `checkerboard()` | Grid-based reveal with multiple patterns | Playful reveals, structured transitions | ✅ Validated |
+| `iris()` | Cinematic circle/diamond wipe from a point | Cinematic reveals, spotlight moments, vintage film | ✅ Validated |
 
 ### Official Transitions (re-exported)
 
@@ -160,6 +161,16 @@ checkerboard({
 - `center-out` - Radial from center
 - `corners-in` - From corners toward center
 
+### iris(options?)
+
+```tsx
+iris({
+  shape: 'circle',       // 'circle' | 'diamond'. Default: 'circle'
+  origin: 'center',      // 'center' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'. Default: 'center'
+  edgeGlow: true,        // Soft glow ring following the iris edge. Default: true
+})
+```
+
 ## Timing Functions
 
 ### linearTiming
@@ -197,6 +208,7 @@ springTiming({
 | **Playful/Creative** | `clockWipe`, `checkerboard`, `flip` |
 | **High Energy** | `zoomBlur`, `rgbSplit`, `glitch` |
 | **Structured/Grid** | `checkerboard`, `pixelate` |
+| **Cinematic/Vintage** | `iris`, `lightLeak`, `fade` |
 
 ## Transition Duration Guidelines
 
