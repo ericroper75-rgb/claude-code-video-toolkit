@@ -121,7 +121,7 @@ This is especially critical for background commands where the working directory 
 
 | Type | Tools | When to Use |
 |------|-------|-------------|
-| **Project tools** | voiceover, music, music_gen, sfx, sync_timing | During video creation workflow |
+| **Project tools** | voiceover, music, music_gen, sfx, sync_timing, validate_assets | During video creation workflow |
 | **Utility tools** | redub, addmusic, notebooklm_brand, locate_watermark | Quick transformations on existing videos |
 | **Cloud GPU** | image_edit, upscale, dewatermark, sadtalker, qwen3_tts, music_gen, flux2 | AI processing via RunPod or Modal (`--cloud runpod\|modal`) |
 
@@ -148,6 +148,16 @@ python3 tools/sync_timing.py --apply                  # Update config (1s defaul
 python3 tools/sync_timing.py --apply --padding 1.5    # Custom padding
 python3 tools/sync_timing.py --voiceover-json vo.json # Use voiceover.py output
 python3 tools/sync_timing.py --json                   # Machine-readable output
+```
+
+### Asset Validation (before render)
+
+Checks every `audioFile`/`videoFile` a scene references against `public/` with ffprobe — catches missing files, corrupt media, missing audio/video streams, and off-aspect video before a render wastes time on broken assets.
+
+```bash
+python3 tools/validate_assets.py                      # Human-readable report
+python3 tools/validate_assets.py --json                # Machine-readable output, exit 1 on errors
+python3 tools/validate_assets.py --config src/config/sprint-config.ts --public-dir public
 ```
 
 ### Qwen3-TTS (Standalone)
@@ -321,7 +331,8 @@ Trims NotebookLM visuals, keeps full audio, bridges with freeze frame, adds bran
 7. **Sync timing** - Run `python3 tools/sync_timing.py --apply` to update config durations
 8. **Preview** - `npm run studio` in project directory
 9. **Iterate** - Adjust timing, content, styling with Claude Code
-10. **Render** - `npm run render` for final MP4
+10. **Validate assets** - Run `python3 tools/validate_assets.py` to catch missing/corrupt media before rendering
+11. **Render** - `npm run render` for final MP4
 
 ## Project Lifecycle
 

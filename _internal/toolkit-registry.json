@@ -497,6 +497,16 @@
       "created": "2026-02-24",
       "updated": "2026-02-24"
     },
+    "validate_assets": {
+      "path": "tools/validate_assets.py",
+      "description": "Validate a project's audio/video scene assets with ffprobe before render - catches missing files, corrupt media, missing streams, and off-aspect video",
+      "usage": "python tools/validate_assets.py --json",
+      "status": "beta",
+      "category": "project",
+      "requires": "ffprobe (from ffmpeg)",
+      "created": "2026-09-09",
+      "updated": "2026-09-09"
+    },
     "flux2": {
       "path": "tools/flux2.py",
       "description": "AI image generation and editing using FLUX.2 Klein 4B - text-to-image, image editing, and scene presets",

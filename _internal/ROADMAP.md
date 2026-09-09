@@ -105,7 +105,7 @@ An open-source, AI-native video production workspace for Claude Code, featuring:
   - [x] `/video` delegates to `/scene-review` when phase is `review`
   - [x] `/generate-voiceover` warns if review incomplete
 - [ ] Pre-render review (timing, sync, polish)
-- [ ] Asset validation (ffprobe checks)
+- [x] Asset validation (ffprobe checks) — `tools/validate_assets.py`
 - [ ] Enhancement suggestions
 - Note: `/review` name clashes with Claude Code built-in PR review - using `/scene-review`
 
