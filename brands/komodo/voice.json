@@ -1,0 +1,18 @@
+{
+  "voiceId": "YOUR_VOICE_ID_HERE",
+  "description": "Deep, measured, documentary-narrator voice — think nature-doc gravitas, not a sales pitch. Replace with your ElevenLabs voice ID.",
+  "settings": {
+    "stability": 0.68,
+    "similarityBoost": 0.85,
+    "style": 0.35,
+    "useSpeakerBoost": true
+  },
+  "model": "eleven_multilingual_v2",
+  "qwen3": {
+    "speaker": "Ryan",
+    "language": "Auto",
+    "tone": "professional",
+    "instruct": "Speak like a nature documentary narrator: deep, measured, a little ominous, building suspense on the reveals.",
+    "clone": null
+  }
+}

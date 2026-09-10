@@ -1,0 +1,129 @@
+{
+  "name": "komodo-dragon",
+  "template": "product-demo",
+  "brand": "komodo",
+  "created": "2026-09-10T00:00:00.000Z",
+  "updated": "2026-09-10T00:00:00.000Z",
+  "phase": "assets",
+  "scenes": [
+    {
+      "id": "intro-title",
+      "type": "title",
+      "durationSeconds": 7,
+      "visual": { "type": "slide" },
+      "narration": null,
+      "status": "ready"
+    },
+    {
+      "id": "intro-broll",
+      "type": "demo",
+      "durationSeconds": 38,
+      "visual": {
+        "type": "external",
+        "asset": "demos/intro-broll.mp4",
+        "instructions": "Slow-motion close-up of a Komodo dragon's eye blinking; quick cuts of it walking powerfully with tongue flicking; drone shot of the rugged Indonesian islands. Source from a licensed nature-footage library, or generate clearly-stylized b-roll with LTX-2 (see .claude/skills/ltx2/) — do not present AI-generated shots as authentic wildlife footage."
+      },
+      "narration": "On a handful of volcanic islands in Indonesia, a creature out of myth walks the earth. It's the world's largest living lizard—a predator so formidable it has inspired legends for centuries. It can grow longer than a car, take down prey ten times its size, and its very bite is a cocktail of biological weaponry. This is the Komodo Dragon. And it is not just a lizard. It is a master of survival, an apex predator, and a living link to a prehistoric past. But its story is also one of vulnerability. Today, we're diving deep into the world of the Komodo dragon—its lethal hunting strategies, its bizarre biology, and the fight to save it from extinction. Let's begin.",
+      "status": "asset-needed"
+    },
+    {
+      "id": "living-dragon-broll",
+      "type": "demo",
+      "durationSeconds": 35,
+      "visual": {
+        "type": "external",
+        "asset": "demos/living-dragon-broll.mp4",
+        "instructions": "Footage of a Komodo dragon walking slowly then speeding up; split-screen of serrated teeth and claws. Pair with an on-screen size-comparison graphic overlay (human vs. dragon) built in Remotion."
+      },
+      "narration": "The Komodo dragon, or Varanus komodoensis, is the undisputed king of the monitor lizards. These animals can reach a staggering three meters in length and weigh over 70 kilograms. Some exceptional individuals have been recorded tipping the scales at nearly 300 pounds. But size is only part of the story. Look at its mouth. You'll find sixty serrated, shark-like teeth, curved backwards to grip and tear flesh. Its claws are razor-sharp, built for ripping into prey. And its tail—powerful enough to knock a deer off its feet.",
+      "status": "asset-needed"
+    },
+    {
+      "id": "living-dragon-stats",
+      "type": "stats",
+      "durationSeconds": 40,
+      "visual": { "type": "slide" },
+      "narration": "Despite its bulk, it can sprint in short bursts up to 20 kilometers per hour. It's an excellent swimmer, capable of crossing open ocean between islands, and it can even dive several meters underwater. For decades, scientists believed its mouth was a cesspool of deadly bacteria—up to 57 different strains—that would infect a wound and kill prey within days. That was the story. A terrifying, perfect story. But it wasn't entirely true.",
+      "status": "ready"
+    },
+    {
+      "id": "venom-truth",
+      "type": "solution",
+      "durationSeconds": 90,
+      "visual": { "type": "slide" },
+      "narration": "In 2009, a venom specialist named Dr. Bryan Fry made a groundbreaking discovery. He put a Komodo dragon through a medical scanner and found something no one expected: a pair of sophisticated venom glands in its lower jaw. The venom is as potent as that of some of the world's deadliest snakes. It contains toxins that lower blood pressure, prevent blood from clotting, and send the prey into shock. The hunting method is brutal and efficient. It's called the \"grip, rip, and drip\" tactic. The dragon doesn't need a powerful bite—its jaw pressure is surprisingly weak compared to a crocodile. Instead, it bites down, locks on with those serrated teeth, and then pulls back with powerful neck muscles, creating massive, gaping wounds. The venom then goes to work, accelerating blood loss and shock. The prey doesn't die from infection days later. It bleeds out, and the dragon—using its incredible sense of smell—tracks it down. What about the bacteria? Recent studies have shown that the Komodo's mouth is actually remarkably clean. The bacteria are just a byproduct of its diet, not a weapon. So, it's not a dirty mouth. It's a venomous one. And that changes everything.",
+      "status": "ready"
+    },
+    {
+      "id": "apex-broll",
+      "type": "demo",
+      "durationSeconds": 40,
+      "visual": {
+        "type": "external",
+        "asset": "demos/apex-broll.mp4",
+        "instructions": "Dramatic footage of a Komodo dragon stalking through tall grass; shots of Timor deer, wild boar, and water buffalo; a dragon feeding on a carcass. Handle with caution — graphic content, consider a content note or softer cutaway."
+      },
+      "narration": "As the apex predator of its ecosystem, the Komodo dragon fears nothing. Its menu reads like a who's who of the Indonesian islands. It preys on Timor deer, wild boar, and even the massive water buffalo—an animal that can weigh over a thousand pounds. Young Komodo dragons start small, eating insects, birds, and small reptiles. But they face a terrifying threat from their own kind. Adult dragons are cannibalistic. To survive, the youngsters spend their first years in the trees, out of reach of the adults below.",
+      "status": "asset-needed"
+    },
+    {
+      "id": "apex-hierarchy",
+      "type": "feature",
+      "durationSeconds": 50,
+      "visual": { "type": "slide" },
+      "narration": "When a large kill is made, the dragons share. But it's a brutal hierarchy. The largest males eat first, then smaller males, then females, and finally the juveniles. A single dragon can consume up to 80% of its own body weight in one feeding. That's like a 150-pound person eating 120 pounds of food in one sitting. To find this food, they rely on an almost supernatural sense of smell. With their long, forked tongue, they can detect a rotting carcass from nearly 10 kilometers away.",
+      "status": "ready"
+    },
+    {
+      "id": "dragons-attack",
+      "type": "problem",
+      "durationSeconds": 60,
+      "visual": {
+        "type": "slide",
+        "instructions": "Optional: news headlines / archival footage of Komodo National Park and a map of Indonesia highlighting Komodo and Flores islands, if licensed archival clips are available."
+      },
+      "narration": "Attacks on humans are rare, but when they happen, they are devastating. In 2007, an eight-year-old boy was killed by a Komodo dragon on Komodo Island. He was mending fishing nets with his uncle when the ten-foot, 15-stone lizard attacked. It clawed his leg, bit his stomach, and shook him violently. He died of massive bleeding before he could reach medical help. In 2001, Phil Bronstein—the husband of actress Sharon Stone—was bitten on the foot at the Los Angeles Zoo. The dragon crushed his big toe, requiring surgery to reattach tendons. These stories remind us that the Komodo dragon is not a zoo animal. It is a wild, unpredictable predator. In its native habitat, it commands respect. And fear.",
+      "status": "ready"
+    },
+    {
+      "id": "species-peril",
+      "type": "stats",
+      "durationSeconds": 60,
+      "visual": { "type": "slide" },
+      "narration": "But the greatest threat to the Komodo dragon isn't from humans—it's for humans. In 2021, the Komodo dragon was reclassified as Endangered on the IUCN Red List. There are only around 1,400 adult dragons left in the wild, with the total population estimated at fewer than 3,500 individuals. The threats are numerous: habitat loss due to agricultural expansion, climate change causing rising sea levels that could destroy 30% of their habitat in the next 35 years, and declining prey populations as deer are hunted by humans. Only 15% of the Komodo's habitat on Flores Island is protected. Outside the national park, dragons face competition from feral dogs and continue to lose ground to human encroachment.",
+      "status": "ready"
+    },
+    {
+      "id": "outro-cta",
+      "type": "cta",
+      "durationSeconds": 30,
+      "visual": {
+        "type": "slide",
+        "instructions": "A final, powerful shot of a Komodo dragon on a ridge, silhouetted against the sky, if available; otherwise a stylized silhouette graphic works well here."
+      },
+      "narration": "The Komodo dragon has survived for millions of years. It outlived the dinosaurs, it adapted to isolated islands, and it became the undisputed ruler of its world. Now, its future depends on us. It depends on protecting the wild places it calls home, on understanding its biology, and on respecting the power of a creature that is truly one of a kind. This is not just a lizard. This is a legend. And legends are worth saving. If you enjoyed this video, hit that like button and subscribe for more deep dives into the animal kingdom. And let me know in the comments: what animal should we cover next? Thanks for watching. Stay curious.",
+      "status": "ready"
+    }
+  ],
+  "audio": {
+    "voiceover": {
+      "file": "audio/voiceover.mp3",
+      "status": "needed",
+      "scriptWordCount": 950
+    },
+    "music": {
+      "file": "audio/background-music.mp3",
+      "status": "needed"
+    }
+  },
+  "estimates": {
+    "totalDurationSeconds": 450,
+    "voiceoverMinutes": 6.3
+  },
+  "sessions": [
+    {
+      "date": "2026-09-10",
+      "summary": "Project created from provided script: scaffolded product-demo template with a new 'komodo' brand, 10-scene breakdown (title/demo/stats/solution/feature/problem/cta), full VOICEOVER-SCRIPT.md. B-roll scenes (intro, living-dragon, apex) flagged asset-needed — need licensed wildlife footage or clearly-stylized AI b-roll."
+    }
+  ]
+}
