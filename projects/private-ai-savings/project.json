@@ -1,0 +1,60 @@
+{
+  "name": "private-ai-savings",
+  "template": "product-demo",
+  "brand": "default",
+  "created": "2026-09-12T00:00:00Z",
+  "updated": "2026-09-12T00:00:00Z",
+  "phase": "planning",
+
+  "scenes": [
+    {
+      "id": "title-hook",
+      "type": "title",
+      "durationSeconds": 10,
+      "visual": { "type": "slide" },
+      "narration": "Stop paying Zapier and OpenAI for every single lead, workflow, and customer reply. You are literally being taxed for your own business growth.",
+      "status": "ready"
+    },
+    {
+      "id": "problem-metered-stack",
+      "type": "problem",
+      "durationSeconds": 20,
+      "visual": { "type": "slide" },
+      "narration": "The traditional automation stack charges you per task and per token. Run three thousand lead qualifications a month, and between Zapier, GPT API calls, and vector databases, you're burning $130 to $270 every month. Run 50,000? Your bill skyrockets into the thousands.",
+      "status": "ready"
+    },
+    {
+      "id": "solution-self-hosted",
+      "type": "solution",
+      "durationSeconds": 25,
+      "visual": { "type": "slide" },
+      "narration": "When you self-host the orchestration layer with n8n, run local open-weight models via Ollama, and index your knowledge with Dify, your platform cost drops to a flat $10 to $20 a month VPS. 500 tasks or 50,000 tasks — the compute cost is identical.",
+      "status": "ready"
+    },
+    {
+      "id": "cta-margin",
+      "type": "cta",
+      "durationSeconds": 15,
+      "visual": { "type": "slide" },
+      "narration": "That $1,400 to $3,000 yearly savings per client is pure margin you can capture. Follow this series — I'm walking through the exact blueprints to deploy and sell private AI automations.",
+      "status": "ready"
+    }
+  ],
+
+  "audio": {
+    "voiceover": {
+      "file": "audio/voiceover.mp3",
+      "status": "needed",
+      "scriptWordCount": 111
+    }
+  },
+
+  "estimates": {
+    "totalDurationSeconds": 70,
+    "voiceoverMinutes": 0.74
+  },
+
+  "sessions": [
+    { "date": "2026-09-12", "summary": "Created project from product-demo template; scripted and configured all 4 scenes (title/problem/solution/cta) from the private-AI-automation-savings ad script; scene durations locked to the script's 0:00-1:10 timestamps." }
+  ]
+}
